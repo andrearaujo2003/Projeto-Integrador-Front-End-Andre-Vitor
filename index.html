@@ -13,7 +13,45 @@
         <h1>Painel de Desenvolvimento Pessoal</h1>
         <p>Organize seus hábitos, tarefas, metas e reflexões em um só lugar.</p>
     </header>
+
+<main>
+
+    <section id="progresso-geral">
+        <h2>Resumo do Dia</h2>
+        <p>Progresso diário: 0%</p>
+    <progress value="0" max="100">0%</progress>
+    </section>
+
+    <section id="Hábitos">
+        <h2>Hábitos Diários</h2>
+        <ul id="lista-habitos">
+            <li>Beber 2L de água</li>
+            <li>Estudar programação por 1 hora</li>
+            <li>Fazer atividade física</li>
+            <li>Leitura da bíblia</li>
+        </ul>
+    </section>
+
+    <section id="Tarefas">
+        <h2>Tarefas Principais</h2>
+        <form id="form-tarefa">
+            <label for="nova-tarefa">Nova Tarefa:</label>
+            <input type="text" id="nova-tarefa" placeholder="Digite uma nova tarefa aqui" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul id="lista-tarefas"></ul>
+    </section>
+
+    <section id="Reflexões">
+        <h2>Gratidões e Reflexões</h2>
+        <label for="texto-reflexao">Registro de hoje:</label>
+        <textarea id="texto-reflexao" rows="4" placeholder="Escreva aqui algo bom do seu dia"></textarea>
+    </section>
+
+</main>
+<footer>
+    <p>Projeto Integrador - Desenvolvimento Front-End para Web</p>
+</footer>
+<script src="js/script.js"></script>
 </body>
-
-
 </html>
